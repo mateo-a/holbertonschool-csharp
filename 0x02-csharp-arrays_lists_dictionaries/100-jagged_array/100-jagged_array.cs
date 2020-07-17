@@ -19,6 +19,7 @@ namespace _100_jagged_array
                         Console.Write(" ");
                     Console.Write(array[col][row]);
                 }
+                Console.WriteLine();
             }
         }
     }

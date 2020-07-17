@@ -5,9 +5,9 @@ class List
 {
     public static List<int> DeleteAt(List<int> myList, int index)
     {
-        if (index < 0 || index > myList.Count -1)
+        if (index < 0 || index > myList.Count - 1)
             Console.WriteLine("Index is out of range");
-        else
-            myList.Remove(myList[index]);
+        myList.Remove(myList[index]);
+        return myList;
     }
 }

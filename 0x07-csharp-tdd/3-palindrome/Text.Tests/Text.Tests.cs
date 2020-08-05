@@ -4,11 +4,6 @@ namespace Tests
 {
     public class Tests
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
-
         [Test]
         public void IsPalindrome_Symbols()
         {
@@ -26,6 +21,16 @@ namespace Tests
         {
             string test = "ABAJABAJ";
             Assert.That(Text.Str.IsPalindrome(test), Is.False);
+        }
+         [Test]
+        public void IsPalindrome_Null()
+        {
+            Assert.IsFalse(Text.Str.IsPalindrome(null));
+        }
+        [Test]
+        public void IsPalindrome_Empty()
+        {
+            Assert.IsTrue(Text.Str.IsPalindrome(""));
         }
     }
 }

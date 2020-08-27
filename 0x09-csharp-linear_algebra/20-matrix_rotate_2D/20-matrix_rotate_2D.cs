@@ -6,7 +6,7 @@ class MatrixMath
     ///<summary>method that rotates a square 2D matrix by a given angle in radians and returns the resulting matrix.</summary>
     public static double[,] Rotate2D(double[,] matrix, double angle)
     {
-        double[,] matrixRes;
+        double[,] matrixRes = new double[2, 2];
         double[,] matrixError = new double[,] { { -1 } };
         double res;
         double[,] matrixRotation = new double[2, 2] {{Math.Cos(angle), Math.Sin(angle)},

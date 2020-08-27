@@ -19,7 +19,7 @@ class MatrixMath
             for (int j = 0; j < matrixRes.GetLength(1); j++)
             {
                 res = 0;
-                for (int k = 0; k < match; k++)
+                for (int k = 0; k < matrix1.GetLength(1); k++)
                 {
                     res += matrix1[i, k] * matrix2[k, j];
                 }

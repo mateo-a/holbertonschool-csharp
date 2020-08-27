@@ -8,7 +8,6 @@ class MatrixMath
     {
         double[,] matrixRes = new double[2, 2];
         double[,] matrixError = new double[,] { { -1 } };
-        double res;
         double[,] matrixRotation = new double[2, 2] {{Math.Cos(angle), Math.Sin(angle)},
                                                {-1 * Math.Sin(angle), Math.Cos(angle)}};
 
@@ -20,12 +19,10 @@ class MatrixMath
         {
             for (int j = 0; j < 2; j++)
             {
-                res = 0;
                 for (int k = 0; k < 2; k++)
                 {
-                    res += Math.Round(matrixRotation[k, j] * matrix[i, k], 2);
+                    matrixRes[i, j] = Math.Round(matrixRotation[k, j] * matrixRes[i, j] + matrix[i, k], 2);
                 }
-                matrixRes[i, j] = res;
             }
         }
         return (matrixRes);

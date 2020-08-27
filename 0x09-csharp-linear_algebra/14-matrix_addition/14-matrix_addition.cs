@@ -7,6 +7,7 @@ class MatrixMath
     public static double[,] Add(double[,] matrix1, double[,] matrix2)
     {
         double[,] matrixRes = new double[matrix1.GetLength(1), matrix1.GetLength(1)];
+        double[,] matrixError = new double[,] {{-1}};
 
         if ((matrix1.GetLength(1) == 2 && matrix2.GetLength(1) == 2) || (matrix1.GetLength(1) == 3 && matrix2.GetLength(1) == 3))
         {
@@ -19,6 +20,6 @@ class MatrixMath
             }
             return matrixRes;
         }
-        return (-1);
+        return matrixError;
     }
 }

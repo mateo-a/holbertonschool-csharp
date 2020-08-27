@@ -6,20 +6,23 @@ class MatrixMath
     ///<summary>method that calculates the inverse of a 2D matrix and returns the resulting matrix.</summary>
     public static double[,] Inverse2D(double[,] matrix)
     {
+        if (matrix == null || matrix.GetLength(0) != 2 || matrix.GetLength(0) != matrix.GetLength(1))
+            return (matrixError);
+        double determinant = (matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]);
         double[,] matrixError = new double[,] { { -1 } };
-        double determinant;
+        double res = matrix[1, 1];
+        matrix[1, 1] = matrix[0, 0];
+        matrix[0, 0] = res;
+        matrix[0, 1] *= -1;
+        matrix[1, 0] *= -1;
 
-        if (matrix.GetLength(0) == 2 && matrix.GetLength(1) == 2)
+        if (determinant != 0)
         {
-            determinant = (matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]);
-            if (determinant == 0)
-                return (matrixError);
-            double[,] matrixInverse = new double[,] {
-                {(1 / determinant) * matrix[1, 1], (1 / determinant) * -matrix[0, 1]},
-                {(1 / determinant) * -matrix[1, 0], (1 / determinant) * matrix[0, 0]}
-            };
-            return (Math.Round(matrixInverse, 2));
+            for (int i = 0; i < matrix.GetLength(0); i++)
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                    matrix[i, j] = Math.Round(matrix[i, j] / determinant, 2);
+            return (matrix);
         }
-        return (matrixError);
+        return (new double[,] { { -1 } });
     }
 }

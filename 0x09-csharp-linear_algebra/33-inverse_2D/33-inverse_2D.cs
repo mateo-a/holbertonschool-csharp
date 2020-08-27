@@ -18,7 +18,7 @@ class MatrixMath
                 {(1 / determinant) * matrix[1, 1], (1 / determinant) * -matrix[0, 1]},
                 {(1 / determinant) * -matrix[1, 0], (1 / determinant) * matrix[0, 0]}
             };
-            return (matrixInverse);
+            return (Math.Round(matrixInverse, 2));
         }
         return (matrixError);
     }

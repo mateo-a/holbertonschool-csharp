@@ -23,7 +23,7 @@ class MatrixMath
                 res = 0;
                 for (int k = 0; k < 2; k++)
                 {
-                    res += Math.Round(matrix[i, k] * matrixRotation[k, j], 2);
+                    res += Math.Round(matrixRotation[k, j] * matrix[i, k], 2);
                 }
                 matrixRes[i, j] = res;
             }

@@ -6,15 +6,19 @@ class MatrixMath
     ///<summary>method that calculates the inverse of a 2D matrix and returns the resulting matrix.</summary>
     public static double[,] Inverse2D(double[,] matrix)
     {
+        double[,] matrixError = new double[,] { { -1 } };
+
         if (matrix == null || matrix.GetLength(0) != 2 || matrix.GetLength(0) != matrix.GetLength(1))
             return (matrixError);
-        double determinant = (matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]);
-        double[,] matrixError = new double[,] { { -1 } };
+
         double res = matrix[1, 1];
+
         matrix[1, 1] = matrix[0, 0];
         matrix[0, 0] = res;
         matrix[0, 1] *= -1;
         matrix[1, 0] *= -1;
+
+        double determinant = (matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]);
 
         if (determinant != 0)
         {

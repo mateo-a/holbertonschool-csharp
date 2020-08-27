@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 ///<summary>Dot product</summary>
 class VectorMath
@@ -15,6 +14,7 @@ class VectorMath
             {
                 for (int i = 0; i < vector1.Length; i++)
                     res += (vector1[i] * vector2[i]);
+                return (res);
             }
             return (res - 1);
         }

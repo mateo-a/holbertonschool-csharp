@@ -61,9 +61,9 @@ public class Queue<T>
             Console.WriteLine("Queue is empty");
             return (default(T));
         }
-        Node rvm = head;
-        head = rvm.next;
+        Node rmv = head;
+        head = rmv.next;
         count -= 1;
-        return (rvm.value);
+        return (rmv.value);
     }
 }

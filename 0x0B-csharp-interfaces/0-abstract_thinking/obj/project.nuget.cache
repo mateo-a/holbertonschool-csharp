@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "TTNt2q7VVffEQwe2RoxprbMlpai81+l0Klg00+gTKYQd1YAdqA6iQLYovXy9sZkI+OLAQZg2iaUkO0EDmxr9ZA==",
+  "success": true,
+  "projectFilePath": "/mnt/d/Alex/Alex/Holberton/Cohort_10/Talleres/specialization/holbertonschool-csharp/0x0B-csharp-interfaces/0-abstract_thinking/0-abstract_thinking.csproj",
+  "expectedPackageFiles": [
+    "/home/alex/.nuget/packages/microsoft.netcore.app/2.1.0/microsoft.netcore.app.2.1.0.nupkg.sha512",
+    "/home/alex/.nuget/packages/microsoft.netcore.dotnetapphost/2.1.0/microsoft.netcore.dotnetapphost.2.1.0.nupkg.sha512",
+    "/home/alex/.nuget/packages/microsoft.netcore.dotnethostpolicy/2.1.0/microsoft.netcore.dotnethostpolicy.2.1.0.nupkg.sha512",
+    "/home/alex/.nuget/packages/microsoft.netcore.dotnethostresolver/2.1.0/microsoft.netcore.dotnethostresolver.2.1.0.nupkg.sha512",
+    "/home/alex/.nuget/packages/microsoft.netcore.platforms/2.1.0/microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+    "/home/alex/.nuget/packages/microsoft.netcore.targets/2.1.0/microsoft.netcore.targets.2.1.0.nupkg.sha512",
+    "/home/alex/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

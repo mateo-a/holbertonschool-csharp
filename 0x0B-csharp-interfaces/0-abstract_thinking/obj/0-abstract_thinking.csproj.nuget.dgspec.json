@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "restore": {
+    "/mnt/d/Alex/Alex/Holberton/Cohort_10/Talleres/specialization/holbertonschool-csharp/0x0B-csharp-interfaces/0-abstract_thinking/0-abstract_thinking.csproj": {}
+  },
+  "projects": {
+    "/mnt/d/Alex/Alex/Holberton/Cohort_10/Talleres/specialization/holbertonschool-csharp/0x0B-csharp-interfaces/0-abstract_thinking/0-abstract_thinking.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/mnt/d/Alex/Alex/Holberton/Cohort_10/Talleres/specialization/holbertonschool-csharp/0x0B-csharp-interfaces/0-abstract_thinking/0-abstract_thinking.csproj",
+        "projectName": "0-abstract_thinking",
+        "projectPath": "/mnt/d/Alex/Alex/Holberton/Cohort_10/Talleres/specialization/holbertonschool-csharp/0x0B-csharp-interfaces/0-abstract_thinking/0-abstract_thinking.csproj",
+        "packagesPath": "/home/alex/.nuget/packages/",
+        "outputPath": "/mnt/d/Alex/Alex/Holberton/Cohort_10/Talleres/specialization/holbertonschool-csharp/0x0B-csharp-interfaces/0-abstract_thinking/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/alex/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
